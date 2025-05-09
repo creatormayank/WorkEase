@@ -33,11 +33,14 @@ nav ul li a {
     text-align: center;
     padding: 50px 20px;
     background: linear-gradient(to right, #f78fb3, #3dc1d3);
+    /* background-image: "includes/images/background.jpg"; */
+    background-size:contain;
     color: white;
 }
 
 .hero h2 {
-    font-size: 2.5rem;
+    /* font-size: 2.5rem; */
+    font-size: 3.5rem;
 }
 
 .service-grid {
@@ -70,4 +73,33 @@ footer {
     background-color: #f8a5c2;
     color: white;
     padding: 10px 0;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background: #ff9a9e;
+    border: none;
+    color: white;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.hero1{
+             animation: RightToLeft 20s infinite linear;
+}
+section p{
+             
+}
+
+@keyframes RightToLeft {
+    from{
+                transform: translateX(-80%);
+    }
+
+    to{
+        transform: translateX(80%);
+    }
 }

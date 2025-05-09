@@ -1,10 +1,3 @@
-// home page
-
-document.querySelector('.hero button').addEventListener('click', () => {
-    window.location.href = '#services';
-});
-
-// login page
 document.addEventListener("DOMContentLoaded", () => {
     const signupForm = document.getElementById("signup-form");
     const loginForm = document.getElementById("login-form");
@@ -18,23 +11,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
     loginForm.addEventListener("submit", (e) => {
-        e.preventDefault();
+        // Remove e.preventDefault(); so the form can submit
+        // e.preventDefault();
         alert("Login form submitted!");
     });
 });
-
-
-//    login page toggle (to hide one form)
-
-function showForm(formType) {
-    const signupForm = document.getElementById("signup-form");
-    const loginForm = document.getElementById("login-form");
-
-    if (formType === 'signup') {
-        signupForm.classList.remove("hidden");
-        loginForm.classList.add("hidden");
-    } else {
-        signupForm.classList.add("hidden");
-        loginForm.classList.remove("hidden");
-    }
-}
