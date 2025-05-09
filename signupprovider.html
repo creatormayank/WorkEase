@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Provider Signup</title>
+  <link rel="stylesheet" href="styleloginsignup.css">
+</head>
+<body>
+  <div class="container">
+    <div class="form-box">
+      <h1>Service Provider Signup</h1>
+      <form action="php/signupprovider.php" method="POST" enctype="multipart/form-data">
+        <input type="text" name="FullName" placeholder="Full Name" required>
+        <input type="date" name="DOB" placeholder="Date of Birth" required>
+        <select name="Gender" required>
+          <option value="" disabled selected>Select Gender</option>
+          <option value="Male">Male</option>
+          <option value="Female">Female</option>
+          <option value="Other">Other</option>
+        </select>
+        <input type="text" name="Address" placeholder="Address" required>
+        <input type="text" name="City" placeholder="City" required>
+        <input type="text" name="State" placeholder="State" required>
+        <input type="text" name="PinCode" placeholder="Pin Code" required>
+        <input type="text" name="MobileNo" placeholder="Mobile Number" required>
+        <input type="email" name="Email" placeholder="Email Address" required>
+        <input type="password" name="Password" placeholder="Password" required>
+        <input type="text" name="ServiceType" placeholder="Service Type (e.g., Electrician)" required>
+        <input type="text" name="AadhaarNo" placeholder="Aadhaar Number" required>
+        <label for="ID1">Upload ID Proof 1:</label>
+        <input type="file" name="ID1" required>
+        <label for="ID2">Upload ID Proof 2:</label>
+        <input type="file" name="ID2" required>
+        <button type="submit" class="btn">Sign Up</button>
+        <p>Already have an account? <a href="loginprovider.html">Log-in</a></p>
+      </form>
+    </div>
+  </div>
+</body>
+</html>
